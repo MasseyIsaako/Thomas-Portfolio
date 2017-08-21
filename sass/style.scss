@@ -1,0 +1,108 @@
+// Import Stylesheets
+@import "var_mix_query.scss";
+
+// Importing Google Fonts
+@import url('https://fonts.googleapis.com/css?family=Raleway:300|Roboto');
+
+// Standard CSS Reset for Browsers
+body,html{
+	margin:$null;
+	padding:$null;
+}
+
+*{
+	float:left;
+	box-sizing:border-box;
+	list-style-type:none;
+}
+
+ul{
+	margin:$null;
+	padding:$null;
+
+	li{
+		width:$full;
+		text-align:center;
+		padding:$null;
+		margin-top:10px;
+		margin-bottom:20px;
+	}
+}
+
+// Styling classes for text
+.paragraph{
+	font-family:"Roboto", sans-serif;
+	font-size:12px;
+}
+
+#wrapper{
+	position:absolute;
+	background:$darkPurple;
+	width:$full;
+	height:$full;
+	overflow-x:hidden;
+	overflow-y:scroll;
+}
+
+#side-nav{
+	background-color:$lightPurple;
+	width:15%;
+	height:100%;
+	position:fixed;
+	z-index:3;
+
+	#nav-container{
+		#logo{
+			z-index:2;
+			width:100%;
+			height:25%;
+			background-color:red;
+			position:absolute;
+			top:5%;
+		}
+
+		#content{
+			width:100%;
+			height:60%;
+			bottom:5%;
+			position:absolute;
+			z-index:1;
+
+			.div-link{
+				color:#FFFFFF;
+				cursor:pointer;
+				transition:0.5s all;
+				
+				&:hover{
+					font-size:14px;
+					color:$darkPurple;
+				}
+			}
+		}
+	}
+}
+
+.slide{
+	margin-left:15%;
+	float:right;
+	width:85%;
+	height:auto;
+	background:none;
+}
+
+#home{height:100vh;}
+
+#about{
+	height:100vh;
+	background-color:orange !important;
+}
+
+// #parallax-div{
+// 	position:absolute;
+// 	margin-left:15%;
+// 	width:85%;
+// 	height:$full;
+// 	background:radial-gradient(circle, rgba(0,0,0,0), rgba(54,18,178,1));
+// 	z-index:5;
+// }
+

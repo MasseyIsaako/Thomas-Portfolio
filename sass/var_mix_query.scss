@@ -1,0 +1,13 @@
+// Variables
+$full:100%;
+$null:0px;
+$darkPurple:rgb(54, 18, 178);
+$lightPurple:rgb(136, 102, 254);
+
+// Mixins
+@mixin background-IMG{
+	background-repeat:no-repeat;
+	background-position:center;
+	background-size:cover;
+	background-attachment:fixed;
+}
