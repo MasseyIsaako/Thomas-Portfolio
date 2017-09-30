@@ -25,22 +25,59 @@ body,html{
 }
 
 // Navigation Styling
-.nav{
-	width:auto;
+#nav{
+	z-index:100;
+	// max-width:150px;
+	// min-width:100px;
+	width:10%;
 	position:fixed;
 	height:100%;
 	background-color:$lightPurple;
+	margin:$null;
+	padding:$null;
+	overflow-x:hidden;
 
 	.nav-item{
-		margin-bottom:20px;
+		position:relative;
+		margin:20px 15px;
 
 		.nav-link{
+			font-family:'Raleway', sans-serif;
 			font-size:15px;
 			color:white;
+			display:block;
+			text-decoration:none;
 
 			&:hover{
 				color:$darkPurple;
 			}
 		}
 	}
+}
+
+// Slide Styling
+.slide{
+	position:relative;
+	width:90%;
+	min-height:100px;
+	float:right;
+}
+
+// Home Section
+#home{
+	@include background-IMG;
+	height:100vh;
+	background-image:url("../images/fale_samoa.jpg");
+
+	#home-overlay{
+		width:$full;
+		height:$full;
+		background:radial-gradient(rgba(54, 18, 178, 0.61), rgba(136, 102, 254, 0.8));
+		background-position:fixed;
+	}
+}
+
+// About Section
+#about{
+	background-color:$grey;
 }
