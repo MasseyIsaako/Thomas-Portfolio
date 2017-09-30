@@ -12,3 +12,7 @@ $grey:rgb(235, 235, 235);
 	background-size:cover;
 	background-attachment:fixed;
 }
+
+@mixin timing{
+	transition:1s;
+}

@@ -1,8 +1,6 @@
 // Import Stylesheets
-@import "var_mix_query.scss";
-
-// Importing Google Fonts
-@import url('https://fonts.googleapis.com/css?family=Raleway:300|Roboto');
+// @import "body.scss", "nav.scss", "fonts.scss", "var_mix_query.scss";
+@import "fonts.scss", "var_mix_query.scss";
 
 // Standard CSS Reset for Browsers
 body,html{
@@ -26,9 +24,8 @@ body,html{
 
 // Navigation Styling
 #nav{
+	@include timing;
 	z-index:100;
-	// max-width:150px;
-	// min-width:100px;
 	width:10%;
 	position:fixed;
 	height:100%;
@@ -37,8 +34,17 @@ body,html{
 	padding:$null;
 	overflow-x:hidden;
 
+	#mobile-menu{
+		width:90%;
+		text-align:center;
+		margin:15px 5%;
+		color:white;
+		cursor:pointer;
+	}
+
 	.nav-item{
 		position:relative;
+		display:block;
 		margin:20px 15px;
 
 		.nav-link{
@@ -65,19 +71,43 @@ body,html{
 
 // Home Section
 #home{
-	@include background-IMG;
 	height:100vh;
 	background-image:url("../images/fale_samoa.jpg");
+	background-position:center;
+	background-size:cover;
+	background-repeat:no-repeat;
 
 	#home-overlay{
 		width:$full;
 		height:$full;
 		background:radial-gradient(rgba(54, 18, 178, 0.61), rgba(136, 102, 254, 0.8));
-		background-position:fixed;
+		background-attachment:fixed;
 	}
 }
 
 // About Section
 #about{
 	background-color:$grey;
+}
+
+// Media Queries
+// Mobile Sizing Sizing
+@media only screen and (max-width:767px){
+	#nav{
+		// max-width:50px;
+
+		.nav-item{
+			display:none;
+		}
+	}
+}
+
+// Tablet Screen Sizing
+@media only screen and (min-width:768px) and (max-width:1199px){
+
+}
+
+// Desktop Screen Sizing
+@media only screen and (min-width:1200px){
+	
 }

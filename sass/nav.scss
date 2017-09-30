@@ -1,0 +1,41 @@
+// Importing Variables
+@import "var_mix_query.scss";
+
+// Navigation Styling
+#nav{
+	z-index:100;
+	max-width:150px;
+	min-width:100px;
+	width:10%;
+	position:fixed;
+	height:100%;
+	background-color:$lightPurple;
+	margin:$null;
+	padding:$null;
+	overflow-x:hidden;
+
+	#menu-bar{
+		width:100%;
+		text-align:center;
+		color:white;
+		margin-top:10px;
+		cursor:pointer;
+	}
+
+	.nav-item{
+		position:relative;
+		margin:20px 15px;
+
+		.nav-link{
+			font-family:'Raleway', sans-serif;
+			font-size:15px;
+			color:white;
+			display:block;
+			text-decoration:none;
+
+			&:hover{
+				color:$darkPurple;
+			}
+		}
+	}
+}
