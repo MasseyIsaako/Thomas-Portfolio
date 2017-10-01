@@ -26,13 +26,14 @@ body,html{
 #nav{
 	@include timing;
 	z-index:100;
-	width:10%;
+	width:50px;
 	position:fixed;
 	height:100%;
 	background-color:$lightPurple;
 	margin:$null;
 	padding:$null;
 	overflow-x:hidden;
+	cursor:pointer;
 
 	#mobile-menu{
 		width:90%;
@@ -44,8 +45,9 @@ body,html{
 
 	.nav-item{
 		position:relative;
-		display:block;
-		margin:20px 15px;
+		display:none;
+		margin:20px $null;
+		width:$full;
 
 		.nav-link{
 			font-family:'Raleway', sans-serif;
@@ -53,6 +55,8 @@ body,html{
 			color:white;
 			display:block;
 			text-decoration:none;
+			width:$full;
+			text-align:center;
 
 			&:hover{
 				color:$darkPurple;
@@ -72,16 +76,29 @@ body,html{
 // Home Section
 #home{
 	height:100vh;
-	background-image:url("../images/fale_samoa.jpg");
+	background-image:url("../images/fale_samoa1.jpg");
 	background-position:center;
 	background-size:cover;
 	background-repeat:no-repeat;
 
 	#home-overlay{
+		display:flex;
 		width:$full;
 		height:$full;
-		background:radial-gradient(rgba(54, 18, 178, 0.61), rgba(136, 102, 254, 0.8));
+		background:radial-gradient(rgba(54, 18, 178, 0.4), rgba(136, 102, 254, 0.4));
 		background-attachment:fixed;
+		justify-content:center;
+
+		#down-arrow{
+			width:50px;
+			height:50px;
+			margin:$null auto;
+			border-radius:$full;
+			background-color:$grey;
+			position:absolute;
+			bottom:-25px;
+			cursor:pointer;
+		}
 	}
 }
 
@@ -93,13 +110,7 @@ body,html{
 // Media Queries
 // Mobile Sizing Sizing
 @media only screen and (max-width:767px){
-	#nav{
-		// max-width:50px;
 
-		.nav-item{
-			display:none;
-		}
-	}
 }
 
 // Tablet Screen Sizing
@@ -109,5 +120,5 @@ body,html{
 
 // Desktop Screen Sizing
 @media only screen and (min-width:1200px){
-	
+
 }
