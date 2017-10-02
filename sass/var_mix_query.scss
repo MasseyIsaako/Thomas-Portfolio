@@ -4,6 +4,7 @@ $null:0px;
 $darkPurple:rgb(54, 18, 178);
 $lightPurple:rgb(136, 102, 254);
 $grey:rgb(235, 235, 235);
+$orange:rgb(255, 131, 25);
 
 // Mixins
 @mixin background-IMG{
@@ -15,4 +16,18 @@ $grey:rgb(235, 235, 235);
 
 @mixin timing{
 	transition:0.5s;
+}
+
+@keyframes bounce{
+	0%{margin-top:10px}
+
+	5%{margin-top:15px}
+
+	10%{margin-top:10px}
+
+	15%{margin-top:15px}
+
+	20%{margin-top:10px}
+
+	100%{margin-top:10px}
 }

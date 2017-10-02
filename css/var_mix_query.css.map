@@ -1,7 +1,7 @@
 {
 "version": 3,
-"mappings": "",
-"sources": [],
+"mappings": "AAoBA,iBAYC,CAXA,EAAE,CAAC,UAAU,CAAC,IAAI,CAElB,EAAE,CAAC,UAAU,CAAC,IAAI,CAElB,GAAG,CAAC,UAAU,CAAC,IAAI,CAEnB,GAAG,CAAC,UAAU,CAAC,IAAI,CAEnB,GAAG,CAAC,UAAU,CAAC,IAAI,CAEnB,IAAI,CAAC,UAAU,CAAC,IAAI",
+"sources": ["../sass/var_mix_query.scss"],
 "names": [],
 "file": "var_mix_query.css"
 }

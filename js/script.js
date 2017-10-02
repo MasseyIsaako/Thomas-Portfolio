@@ -14,8 +14,7 @@ $(document).ready(function(){
 	// Mobile Navigation Interactivity
 	navContainer.click(function(){
 			if(!mobileNav){
-				navContainer.css("width", "50px");
-				slide.css("margin-left", "0px");
+				navContainer.css("width", "30px");
 				$(".nav-item").fadeOut(500);
 
 				// Changing the Chevron based on whether nav is open or not
@@ -26,7 +25,6 @@ $(document).ready(function(){
 			} else {
 				navContainer.css("width", "100vw");
 				$(".nav-item").fadeIn(500);
-				console.log(navContainer[0].style.width);
 
 				// Changing the Chevron based on whether nav is open or not
 				mobileIcon.removeClass("fa-chevron-right");
