@@ -22,6 +22,7 @@ body,html{
 	width:$full;
 	min-height:100vh;
 	background-color:purple;
+	overflow-x:hidden;
 }
 
 // Navigation Styling
@@ -116,23 +117,27 @@ body,html{
 		}
 
 		// Down arrow to About Slide
-		#down-arrow{
-			width:75px;
-			height:75px;
-			margin:$null auto;
-			border-radius:$full;
-			background-color:$grey;
+		a{
 			position:absolute;
+			margin:$null auto;
 			bottom:-37.5px;
-			cursor:pointer;
+			border-radius:$full;
 
-			#downwards{
-				animation:bounce 20s infinite;
-				width:$full;
-				text-align:center;
-				justify-content:center;
-				margin-top:10px;
-				color:$orange;
+			#down-arrow{
+				width:75px;
+				height:75px;
+				border-radius:$full;
+				background-color:$grey;
+				cursor:pointer;
+
+				#downwards{
+					animation:bounce 20s infinite;
+					width:$full;
+					text-align:center;
+					justify-content:center;
+					margin-top:10px;
+					color:$orange;
+				}
 			}
 		}
 	}
@@ -140,7 +145,42 @@ body,html{
 
 // About Section
 #about{
+	display:block;
 	background-color:$grey;
+	padding:$null 50px;
+
+	h3{
+		color:$orange;
+		text-align:center;
+		width:$full;
+		letter-spacing:5px;
+	}
+
+	.about-columns{
+		width:20%;
+		margin:10px 6.6%;
+		min-height:100px;
+
+		.about-circle{
+			width:$full;
+			min-height:50px;
+			border-radius:$full;
+			background-color:$orange;
+		}
+	}
+}
+
+// Experience Section
+#experience{
+	height:50vh;
+	@include background-IMG;
+	background-image:url("../images/palm_trees1.jpg");
+
+	#about-overlay{
+		width:$full;
+		height:$full;
+		background-color:rgba(51, 51, 51, 0.8);
+	}
 }
 
 // Media Queries
